@@ -1,7 +1,55 @@
+$dark-grey: #d1d2d3;
+$light-grey: #e6e7e9;
+$primary: #9356dc;
+$secondary: #ff79da;
+$terciary: #99e2d0;
+
 body {
   margin: 0;
+  font-family: "Roboto", sans-serif;
+}
+
+a,
+a:link,
+a:visited,
+a:active,
+a:focus {
+  text-decoration: none;
 }
 
 img {
   width: 10rem;
+}
+
+header {
+  height: 10vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.location {
+  background: $dark-grey;
+  height: 10vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero {
+  background: $light-grey;
+  height: 70vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column;
+}
+
+.btn {
+  color: white;
+  background: $primary;
+  background: linear-gradient(350deg, $primary 0%, $secondary 100%);
+  padding: 1.2rem;
+  border-radius: 3rem;
+  font-weight: bold;
 }

@@ -1,8 +1,71 @@
 body {
   margin: 0;
+  font-family: "Roboto", sans-serif;
+}
+
+a,
+a:link,
+a:visited,
+a:active,
+a:focus {
+  text-decoration: none;
 }
 
 img {
   width: 10rem;
+}
+
+header {
+  height: 10vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.location {
+  background: #d1d2d3;
+  height: 10vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.hero {
+  background: #e6e7e9;
+  height: 70vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column;
+          flex-flow: column;
+}
+
+.btn {
+  color: white;
+  background: #9356dc;
+  background: linear-gradient(350deg, #9356dc 0%, #ff79da 100%);
+  padding: 1.2rem;
+  border-radius: 3rem;
+  font-weight: bold;
 }
 /*# sourceMappingURL=style.css.map */
