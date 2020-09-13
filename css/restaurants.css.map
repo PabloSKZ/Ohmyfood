@@ -1,0 +1,10 @@
+{
+    "version": 3,
+    "mappings": "ACAA,mBAAmB;AACnB,qBAAqB;AAUrB,kBAAkB;AAKlB,WAAW;ADdX,AAAA,EAAE,CAAC;EACD,WAAW,EAAE,oBAAoB;CAClC",
+    "sources": [
+        "restaurants.scss",
+        "_variables.scss"
+    ],
+    "names": [],
+    "file": "restaurants.css"
+}

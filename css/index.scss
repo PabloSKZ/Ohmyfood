@@ -1,0 +1,168 @@
+@import "./variables";
+
+header {
+  height: 4rem;
+  width: 100%;
+  background: $white;
+  position: fixed;
+  top: 0;
+  z-index: 2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: $bottom-shadow;
+}
+
+.location {
+  margin-top: 4rem;
+  background: $dark-grey;
+  height: 2.8rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  i {
+    margin-right: 1rem;
+  }
+}
+
+.hero {
+  background: $light-grey;
+  height: 18rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column;
+  text-align: center;
+
+  h1 {
+    font-size: 1.5rem;
+    margin-top: 0;
+  }
+
+  p {
+    margin: 1.8rem;
+    color: $darker-grey;
+    font-size: 1.1rem;
+  }
+}
+
+h2 {
+  padding: 2.5rem 0 1.5rem 0.8rem;
+  font-size: 1.3rem;
+}
+
+.step {
+  padding: 1.5rem 1rem;
+  margin: 1rem;
+  background: $light-grey;
+  border-radius: 2rem;
+  box-shadow: $bottom-shadow;
+
+  i {
+    position: relative;
+    left: -0.4rem;
+    color: $darker-grey;
+  }
+
+  p {
+    display: inline;
+    margin: 0.6rem;
+  }
+
+  &__number {
+    position: relative;
+    left: -1.4rem;
+    top: 0.1rem;
+    color: $white;
+    background: $primary;
+    padding: 0.2rem 0.45rem;
+    border-radius: 50%;
+  }
+
+  &__active {
+    background: $primary-light;
+
+    i {
+      color: $primary;
+    }
+  }
+}
+
+.restaurants {
+  background: $light-grey;
+  padding-bottom: 5vh;
+
+  .card {
+    background: $white;
+    margin: 1rem;
+    border-radius: 1rem;
+    box-shadow: $bottom-shadow;
+
+    &__img {
+      width: 100%;
+      height: 10rem;
+      object-fit: cover;
+      border-top-right-radius: 1rem;
+      border-top-left-radius: 1rem;
+    }
+
+    &__sticker {
+      display: inline;
+      position: absolute;
+      right: 2.5rem;
+      color: $green;
+      background: $green-light;
+      padding: 0.4rem 2rem;
+      font-weight: bold;
+    }
+
+    &__bottom {
+      display: flex;
+      justify-content: space-between;
+
+      &__text {
+        margin: 1rem;
+        h3,
+        p {
+          margin: 0.1rem;
+          padding: 0.1rem;
+        }
+        p {
+          color: $darker-grey;
+        }
+      }
+
+      i {
+        color: $darker-grey;
+        margin: 1.3rem;
+      }
+    }
+  }
+}
+
+footer {
+  background: $darkest-grey;
+  color: $white;
+  display: flex;
+  flex-flow: column;
+  padding: 1rem;
+
+  img {
+    filter: invert(1);
+    margin: 1rem 0;
+  }
+
+  a,
+  a:link,
+  a:visited,
+  a:active,
+  a:focus {
+    color: $white;
+    margin: 0.3rem;
+
+    i {
+      width: 1rem;
+      margin-right: 0.5rem;
+    }
+  }
+}

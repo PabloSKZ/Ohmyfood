@@ -1,0 +1,31 @@
+@import "./variables";
+
+body {
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+}
+
+a,
+a:link,
+a:visited,
+a:active,
+a:focus {
+  text-decoration: none;
+  color: inherit;
+}
+
+.btn {
+  color: $white;
+  background: $primary;
+  background: linear-gradient(350deg, $primary 0%, $secondary 100%);
+  padding: 1.2rem;
+  border-radius: 3rem;
+  font-weight: bold;
+  box-shadow: $bottom-shadow;
+}
+
+/* TODO: DELETE */
+img {
+  width: 10rem;
+}
+/**/
