@@ -2,19 +2,6 @@
 /* TODO: coherence */
 /* Model Colors */
 /* Other */
-header {
-  height: 4rem;
-  width: 100%;
-  background: white;
-  position: fixed;
-  top: 0;
-  z-index: 2;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  box-shadow: 0px 10px 20px -15px rgba(0, 0, 0, 0.75);
-}
-
 .location {
   margin-top: 4rem;
   background: #eaeaea;
@@ -143,36 +130,5 @@ h2 {
 .restaurants .card__bottom i {
   color: #666666;
   margin: 1.3rem;
-}
-
-footer {
-  background: #353535;
-  color: white;
-  display: flex;
-  flex-flow: column;
-  padding: 1rem;
-}
-
-footer img {
-  filter: invert(1);
-  margin: 1rem 0;
-}
-
-footer a,
-footer a:link,
-footer a:visited,
-footer a:active,
-footer a:focus {
-  color: white;
-  margin: 0.3rem;
-}
-
-footer a i,
-footer a:link i,
-footer a:visited i,
-footer a:active i,
-footer a:focus i {
-  width: 1rem;
-  margin-right: 0.5rem;
 }
 /*# sourceMappingURL=index.css.map */

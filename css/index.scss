@@ -1,18 +1,5 @@
 @import "./variables";
 
-header {
-  height: 4rem;
-  width: 100%;
-  background: $white;
-  position: fixed;
-  top: 0;
-  z-index: 2;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  box-shadow: $bottom-shadow;
-}
-
 .location {
   margin-top: 4rem;
   background: $dark-grey;
@@ -136,33 +123,6 @@ h2 {
         color: $darker-grey;
         margin: 1.3rem;
       }
-    }
-  }
-}
-
-footer {
-  background: $darkest-grey;
-  color: $white;
-  display: flex;
-  flex-flow: column;
-  padding: 1rem;
-
-  img {
-    filter: invert(1);
-    margin: 1rem 0;
-  }
-
-  a,
-  a:link,
-  a:visited,
-  a:active,
-  a:focus {
-    color: $white;
-    margin: 0.3rem;
-
-    i {
-      width: 1rem;
-      margin-right: 0.5rem;
     }
   }
 }
