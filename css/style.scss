@@ -44,11 +44,6 @@ header {
   transition: box-shadow 0.8s ease-in-out, opacity 0.5s ease-in-out;
 
   &:hover {
-    /* background: linear-gradient(
-      350deg,
-      lighten($primary, 3) 0%,
-      lighten($secondary, 3) 100%
-    ); */
     opacity: 0.9;
     box-shadow: $bottom-shadow-more;
   }
