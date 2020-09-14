@@ -2,6 +2,7 @@
 /* TODO: coherence */
 /* Model Colors */
 /* Other */
+/* Mixins */
 .location {
   margin-top: 4rem;
   background: #eaeaea;
@@ -149,11 +150,11 @@ h2 {
 }
 
 .restaurants .card__bottom .fas {
+  right: 1rem;
   transform: scale(0);
   opacity: 0;
   visibility: hidden;
   position: absolute;
-  right: 1rem;
   color: #9356dc;
   transition: transform 1s ease-in-out, opacity 0.8s ease-in-out, visibility 0.8s ease-in-out;
   transform-origin: bottom;

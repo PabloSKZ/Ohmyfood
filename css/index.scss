@@ -139,15 +139,8 @@ h2 {
       }
 
       .fas {
-        transform: scale(0);
-        opacity: 0;
-        visibility: hidden;
-        position: absolute;
         right: 1rem;
-        color: $primary;
-        transition: transform 1s ease-in-out, opacity 0.8s ease-in-out,
-          visibility 0.8s ease-in-out;
-        transform-origin: bottom;
+        @include heart-effect;
       }
     }
   }
