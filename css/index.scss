@@ -123,6 +123,32 @@ h2 {
         color: $darker-grey;
         margin: 1.3rem;
       }
+
+      .far {
+        transition: visibility 3s;
+        opacity: 1;
+        transition: opacity 1s ease-in-out;
+        &:hover {
+          opacity: 0;
+        }
+        &:hover + .fas {
+          visibility: visible;
+          transform: scale(1);
+          opacity: 1;
+        }
+      }
+
+      .fas {
+        transform: scale(0);
+        opacity: 0;
+        visibility: hidden;
+        position: absolute;
+        right: 1rem;
+        color: $primary;
+        transition: transform 1s ease-in-out, opacity 0.8s ease-in-out,
+          visibility 0.8s ease-in-out;
+        transform-origin: bottom;
+      }
     }
   }
 }
