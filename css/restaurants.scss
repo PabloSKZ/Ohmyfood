@@ -46,6 +46,7 @@
     i {
       margin: 1.5rem;
       color: $darker-grey;
+      cursor: pointer;
     }
 
     .far {
@@ -91,20 +92,74 @@
     background: $white;
     width: 90%;
     margin: 1rem auto;
-    padding: 1rem;
+    height: 5rem;
     display: flex;
     justify-content: space-between;
-    align-items: flex-end;
+    align-items: center;
     border-radius: 1rem;
     box-shadow: $bottom-shadow;
+    cursor: pointer;
 
     h3,
     p {
-      margin: 0.2rem;
+      margin: 0.2rem 0.8rem;
     }
 
     &__price {
       font-weight: bold;
+      padding-right: 0.2rem;
+      transform: translateX(4rem);
+      position: absolute;
+      right: 20vw;
+    }
+
+    &__select {
+      visibility: hidden;
+      background: $green-light;
+      width: 3rem;
+      text-align: center;
+      padding: 1.9rem 0.6rem;
+      color: $white;
+      border-top-right-radius: 1rem;
+      border-bottom-right-radius: 1rem;
+      transform-origin: right;
+    }
+
+    &:hover > .card__select {
+      visibility: visible;
+      animation: select 0.5s ease-in-out;
+
+      i {
+        animation: roll 0.7s ease-in-out;
+      }
+    }
+
+    &:hover > .card__price {
+      animation: price 0.5s ease-in-out forwards;
+    }
+
+    @keyframes select {
+      0% {
+        transform: scaleX(0);
+      }
+      100% {
+        transform: scaleX(1);
+      }
+    }
+
+    @keyframes roll {
+      0% {
+        transform: rotate(-360deg);
+      }
+      100% {
+        transform: rotate(0);
+      }
+    }
+
+    @keyframes price {
+      100% {
+        transform: translateX(0);
+      }
     }
   }
 }
